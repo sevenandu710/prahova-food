@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prahova Food | Romanian street food from our food truck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2eee6;--ink:#1b2340;--muted:#505873;--blue:#1d3a8c;--gold:#f6c32b;--red:#c8302b;--card:#fffdf8;--line:#d8d1c0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121830;--ink:#f2eee6;--muted:#aeb5cc;--blue:#0d1f58;--red:#ef5a52;--card:#1a2244;--line:#2c3760}}
+:root[data-theme="dark"]{--bg:#121830;--ink:#f2eee6;--muted:#aeb5cc;--blue:#0d1f58;--red:#ef5a52;--card:#1a2244;--line:#2c3760}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Bitter,Georgia,"Times New Roman",serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+.top{background:var(--blue);color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+.logo{font:800 1.4rem Bitter,serif;text-decoration:none;color:#fff}
+nav a{margin-left:1.25rem;text-decoration:none;font-weight:600;color:#fff}
+nav a:hover{color:var(--gold)}
+.hero{padding:3rem 0 4rem}
+.hero h1{font-size:clamp(2.8rem,10vw,6.5rem);font-weight:800;letter-spacing:-.02em;max-width:12ch}
+.hero p{max-width:34rem;font-size:1.2rem;margin:1.5rem 0 2rem;color:#e5e9f7}
+.btn{display:inline-block;background:var(--gold);color:#1b2340;font-weight:600;padding:.85rem 1.6rem;border-radius:6px;text-decoration:none}
+.btn:hover{filter:brightness(1.07)}
+.flagwrap{overflow:hidden;width:100%}
+.flag{display:flex;height:36px;width:100%;transform:translateX(-100%);animation:come 1.4s cubic-bezier(.2,.7,.2,1) .2s forwards}
+.flag i{flex:1}
+@keyframes come{to{transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){.flag{animation:none;transform:none}}
+section{padding:4rem 0}
+h2{font-size:clamp(1.9rem,5vw,3rem);margin-bottom:1.25rem}
+.about{max-width:44rem}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tabs button{font:600 1rem "Nunito Sans",sans-serif;color:var(--ink);background:transparent;border:2px solid var(--blue);padding:.5rem 1.1rem;border-radius:6px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.menu{display:none;list-style:none;margin:0;padding:0}
+.menu.on{display:block}
+.menu li{display:grid;grid-template-columns:1fr auto;gap:.25rem 1rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.menu h3{font-size:1.3rem}
+.menu p{grid-column:1;margin:0;color:var(--muted)}
+.menu .price{grid-row:1;grid-column:2;font:800 1.2rem Bitter,serif}
+.tag{display:inline-block;font:600 .8rem "Nunito Sans",sans-serif;background:var(--gold);color:#1b2340;border-radius:4px;padding:.1rem .45rem;margin-left:.5rem;vertical-align:middle}
+.visit{background:var(--blue);color:#fff;border-radius:12px;padding:2.5rem;display:grid;gap:1.5rem;grid-template-columns:1fr;border-top:8px solid var(--red)}
+@media (min-width:760px){.visit{grid-template-columns:1fr 1fr}}
+.visit h2{margin:0 0 .75rem}
+.visit dl{margin:0}.visit dt{font-weight:600;color:var(--gold)}.visit dd{margin:0 0 .9rem}
+footer{padding:1rem 0 3rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="top">
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">Prahova Food</a>
+  <nav><a href="#about">Romanian food</a><a href="#menu">Menu</a><a href="#visit">Visit us</a></nav>
+</header>
+<div class="hero" id="top">
+  <h1>Mici and grill, straight from our truck.</h1>
+  <p>Romanian street food cooked over charcoal, plus the burgers and hot dogs you already love. Come hungry.</p>
+  <a class="btn" href="#menu">See the menu</a>
+</div>
+</div>
+<div class="flagwrap" aria-hidden="true">
+  <div class="flag"><i style="background:#002b7f"></i><i style="background:#fcd116"></i><i style="background:#ce1126"></i></div>
+</div>
+
+<main class="wrap">
+<section id="about" class="about">
+  <div>
+    <h2>A short introduction to Romanian food</h2>
+    <p>Romanian cooking is hearty, generous and built for sharing. It grew from the Carpathian mountains, the Danube plains and centuries of crossing influences, so you will find hints of Balkan, Hungarian, Turkish and Austrian kitchens on the same table.</p>
+    <p>Meals are social. Families gather on Sundays, friends grill outdoors on warm days, and holidays like Easter and Christmas centre on slow-cooked dishes and sweet bread. Our home is named after the Prahova Valley, a mountain region known for its hospitality.</p>
+    <p>The most famous street food is <b>mici</b> (said "meech"): garlicky grilled minced-meat rolls, served hot with mustard and fresh bread. We make ours the traditional way and grill them to order.</p>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <div class="tabs" role="tablist" aria-label="Menu sections">
+    <button role="tab" aria-selected="true" aria-controls="ro" id="t-ro">Romanian foods</button>
+    <button role="tab" aria-selected="false" aria-controls="bbq" id="t-bbq">Barbecue</button>
+    <button role="tab" aria-selected="false" aria-controls="drinks" id="t-drinks">Drinks</button>
+  </div>
+  <ul class="menu on" id="ro" role="tabpanel" aria-labelledby="t-ro">
+    <li><h3>Mici<span class="tag">Signature</span></h3><span class="price">£8.00</span><p>Five grilled rolls with mustard and fresh bread. Add chips for £2.</p></li>
+    <li><h3>Sarmale cu mămăligă</h3><span class="price">£9.50</span><p>Three cabbage rolls with polenta and a spoon of sour cream.</p></li>
+    <li><h3>Mămăligă cu brânză<span class="tag">Vegetarian</span></h3><span class="price">£7.00</span><p>Creamy polenta with salty cheese and sour cream.</p></li>
+    <li><h3>Papanași</h3><span class="price">£6.50</span><p>Fried cheese doughnuts, sour cream and sour cherry jam.</p></li>
+  </ul>
+  <ul class="menu" id="bbq" role="tabpanel" aria-labelledby="t-bbq" hidden>
+    <li><h3>Smash Burger</h3><span class="price">£8.50</span><p>Beef patty, cheese, pickles, onion and house sauce in a toasted bun.</p></li>
+    <li><h3>Double Cheeseburger</h3><span class="price">£10.50</span><p>Two patties, double cheese, lettuce and tomato.</p></li>
+    <li><h3>Classic Hot Dog</h3><span class="price">£6.00</span><p>Grilled sausage, fried onions, mustard and ketchup.</p></li>
+    <li><h3>Grilled Chicken Wrap</h3><span class="price">£8.50</span><p>Marinated chicken, salad and garlic sauce in a flatbread.</p></li>
+    <li><h3>Veggie Burger<span class="tag">Vegan</span></h3><span class="price">£8.50</span><p>Bean and mushroom patty with salad and vegan mayo.</p></li>
+  </ul>
+  <ul class="menu" id="drinks" role="tabpanel" aria-labelledby="t-drinks" hidden>
+    <li><h3>Homemade Lemonade</h3><span class="price">£3.50</span><p>Fresh lemon, mint and a little sugar.</p></li>
+    <li><h3>Soft drinks</h3><span class="price">£2.50</span><p>Cola, lemon-lime or orange.</p></li>
+    <li><h3>Still or sparkling water</h3><span class="price">£2.00</span><p>500ml bottle.</p></li>
+    <li><h3>Coffee</h3><span class="price">£2.50</span><p>Hot, black or with milk.</p></li>
+  </ul>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div>
+      <h2>Visit us</h2>
+      <p>We serve everything from our food truck, cooked fresh to order. Look for the blue truck and the smell of charcoal.</p>
+    </div>
+    <dl>
+      <dt>Find the truck</dt><dd>Market Square, Aylesbury</dd>
+      <dt>Dietary needs</dt><dd>We can meet dietary needs, including vegetarian, vegan and allergy requests. Tell us when you order and we will sort it out.</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<div class="wrap"><footer>© 2026 Prahova Food. The address and prices are sample details.</footer></div>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('[role="tab"]');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(o){
+        var on=o===t;
+        o.setAttribute('aria-selected',on);
+        var p=document.getElementById(o.getAttribute('aria-controls'));
+        p.classList.toggle('on',on);
+        p.hidden=!on;
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
